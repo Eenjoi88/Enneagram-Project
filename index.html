@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="./src/yoda.png">
+  <title>Enneagram Project</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +14,9 @@
     <nav>
       <ul>
         <li id="nav-1" class="slide-out-1"><a href="#">Home</a></li>
-        <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
-        <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
-        <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
-        <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#enneagram">What is the Enneagram?</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#types">Types</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#family">Family</a></li>
       </ul>
     </nav>
   </div>
@@ -27,11 +27,52 @@
     <div class="bar3"></div>
   </div>
   <!-- Sections -->
-  <section id="home"><a href="" target="_blank">Andrew Kowalski</a></section>
-  <section id="about"><h1>Learn More About Me</h1></section>
-  <section id="skills"><h1>These Are My Strengths</h1></section>
-  <section id="projects"><h1>These Are My Results</h1></section>
-  <section id="contact"><h1>Available Anytime</h1></section>
+  <section id="home"><a href="https://github.com/Eenjoi88" target="_blanks">Andrew Kowalski</a><h1 class="homeHeader">Welcome to the Eneagram Project</section>
+  <section id="enneagram">
+    <h1 class="explained" >Enneagram Explained</h1>
+    <object class="box2" id="box2" type="text/html"></object>
+    <button class="button" id="link" onclick="testingCenter()">Take the test to find your type!</button>
+  </section>
+  <section id="types">
+    <div class="btn-setup">
+        <button class="button" id="reformer" onclick="showType(1)">1 THE REFORMER</button>
+        <button class="button" id="helper" onclick="showType(2)">2 THE HELPER</button>
+        <button class="button" id="achiever" onclick="showType(3)">3 THE ACHIEVER</button>
+        <button class="button" id="individualist" onclick="showType(4)">4 THE INDIVIDUALIST</button>
+        <button class="button" id="investigator" onclick="showType(5)">5 THE INVESTIGATOR</button>
+        <button class="button" id="loyalist" onclick="showType(6)">6 THE LOYALIST</button>
+        <button class="button" id="enthusiast" onclick="showType(7)">7 THE ENTHUSIAST</button>
+        <button class="button" id="challenger" onclick="showType(8)">8 THE CHALLENGER</button>
+        <button class="button" id="peacemaker" onclick="showType(9)">9 THE PEACEMAKER</button>
+    </div>
+    <object class="box" id="box" type="text/html"></object>
+  </section>
+  <section id="family">
+    <div class="btn-setup">
+      <button class="familyButton" id="reformer" onclick="showPerson(1)">1 THE REFORMER</button>
+      <button class="button" id="helper" onclick="showPerson(2)">2 THE HELPER</button>
+      <button class="button" id="achiever" onclick="showPerson(3)">3 THE ACHIEVER</button>
+      <button class="button" id="individualist" onclick="showPerson(4)">4 THE INDIVIDUALIST</button>
+      <button class="button" id="investigator" onclick="showPerson(5)">5 THE INVESTIGATOR</button>
+      <button class="button" id="loyalist" onclick="showPerson(6)">6 THE LOYALIST</button>
+      <button class="button" id="enthusiast" onclick="showPerson(7)">7 THE ENTHUSIAST</button>
+      <button class="button" id="challenger" onclick="showPerson(8)">8 THE CHALLENGER</button>
+      <button class="button" id="peacemaker" onclick="showPerson(9)">9 THE PEACEMAKER</button>
+    </div>
+    <div class="familyBox" id="familyBox">
+      <img class="img 9" id="9" src="./src/Dad.jpeg">
+      <img class="img 2" id="2" src="./src/Mom.jpeg">
+      <img class="img 4" id="4" src="./src/Andrew.png">
+      <img class="img 6" id="6" src="./src/Diana.jpeg">
+      <img class="img 9" id="9" src="./src/Vince.jpeg">
+      <img class="img 3" id="3" src="./src/Danielle.jpeg">
+      <img class="img 3" id="3" src="./src/Bek.jpeg">
+      <img class="img 7" id="7" src="./src/Johnny.jpeg">
+      <img class="img" id="" src="./src/Benny.jpeg">
+      <img class="img" id="" src="./src/Kaylee.jpeg">
+      <img class="img 9" id="9" src="./src/Sam.jpeg">
+    </div>
+  </section>
   <!-- Script -->
   <script src="script.js"></script>
 </body>

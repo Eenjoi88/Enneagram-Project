@@ -6,7 +6,15 @@
   --navColor2: #aa3e39;
   --navColor3: #aa6e39;
   --navColor4: #236267;
-  --navColor5: #2c8437;
+  --reformer: #694F90; 
+  --helper: #8E79AD;
+  --achiever: #C76476; 
+  --individualist: #781426; 
+  --investigator: #807515; 
+  --loyalist: #D4CA6A; 
+  --enthusiast: #164900; 
+  --challenger: #2D6E12; 
+  --peacemaker: #76B75B; 
 }
 
 html {
@@ -59,7 +67,7 @@ nav ul {
 }
 
 nav ul li {
-  height: 20%;
+  height: 25%;
   overflow: hidden;
 }
 
@@ -109,10 +117,6 @@ nav li:nth-of-type(4) {
   background-color: var(--navColor4);
 }
 
-nav li:nth-of-type(5) {
-  background-color: var(--navColor5);
-}
-
 /* Slide in animation with delay for each */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
@@ -128,10 +132,6 @@ nav li:nth-of-type(5) {
 
 .slide-in-4 {
   animation: slide-in 0.4s linear 0.8s both;
-}
-
-.slide-in-5 {
-  animation: slide-in 0.4s linear 1s both;
 }
 
 @keyframes slide-in {
@@ -159,10 +159,6 @@ nav li:nth-of-type(5) {
 
 .slide-out-4 {
   animation: slide-out 0.3s linear 0.2s both;
-}
-
-.slide-out-5 {
-  animation: slide-out 0.3s linear 0.1s both;
 }
 
 @keyframes slide-out {
@@ -226,7 +222,7 @@ section {
 }
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+  background-image: url("https://images.unsplash.com/photo-1532012197267-da84d127e765?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
   background-size: cover;
   background-position: center center;
 }
@@ -243,20 +239,20 @@ section#home a {
   border-bottom: 1px solid var(--primaryColor);
 }
 
-section#about {
+section#enneagram {
   background-color: var(--navColor2);
 }
 
-section#skills {
+section#types {
   background-color: var(--navColor3);
 }
 
-section#projects {
+section#family {
   background-color: var(--navColor4);
 }
 
-section#contact {
-  background-color: var(--navColor5);
+.homeHeader {
+  font-size: 50px;
 }
 
 /* Media Query: Large Smartphone (Vertical) */
@@ -270,4 +266,127 @@ section#contact {
     top: 0.5rem;
     right: 1rem;
   }
+}
+
+h1.explained {
+  position: absolute;
+  top: 1rem;
+  color: black;
+  font-size: 45px;
+}
+
+.btn-setup {
+  position: absolute;
+  z-index: 2;
+  top: 3rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+}
+
+button {
+  border-radius: 15px;
+  height: 10vh;
+  width: 10vw;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition-duration: .4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  height: 12vh;
+  width: 13vw;
+  color: black;
+  font-size: 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+
+}
+
+button:active {
+  transform: scale(0.5);
+}
+
+.box {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 15vw;
+  width: 80%;
+  height: 90%;
+}
+
+.box2 {
+  position: absolute;
+  z-index: 1;
+  top: 12vh;
+  left: 5vw;
+  width: 88vw;
+  height: 80vh;
+}
+
+button#reformer {
+  background-color: var(--reformer);
+}
+
+button#helper{
+  background-color: var(--helper); 
+}
+
+button#achiever{
+  background-color: var(--achiever); 
+}
+
+button#individualist{
+  background-color: var(--individualist); 
+}
+
+button#investigator{
+  background-color: var(--investigator); 
+}
+
+button#loyalist{
+  background-color: var(--loyalist); 
+}
+
+button#enthusiast{
+  background-color: var(--enthusiast); 
+}
+
+button#challenger{
+  background-color: var(--challenger); 
+}
+
+button#peacemaker{
+  background-color: var(--peacemaker);  
+}
+
+.familyBox {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 12vw;
+  width: 80%;
+  height: 85%;
+}
+
+.familyBox img {
+  width: auto;
+  height: 24vh;
+  opacity: 0.3;
+}
+
+button#link{
+  position: absolute;
+  background: var(--peacemaker);
+  font-size: 35px;
+  z-index: 1;
+  top: 93vh;
+  left: 5%;
+  height: 5vh;
+  width: 88vw;
 }
