@@ -58,15 +58,6 @@ function showPerson(num) {
   }
 }
 
-
-  // var x = document.getElementsByClassName(num);
-  // for(var i=0; i<x.length; i++) {
-  //   if(x[i].style.opacity === "1")
-  //   {
-  //    x[i].style.opacity = "0.3"; 
-  //   }else {x[i].style.opacity = "1"; }
-  // }
-
 // Event Listeners
 menuBars.addEventListener('click', toggleNav);
 navItems.forEach((nav) => {
