@@ -170,7 +170,6 @@ nav li:nth-of-type(4) {
     transform: translateX(-100%);
   }
 }
-
 /* --- Menu Bars ------------------------------------ */
 .menu-bars {
   position: fixed;
